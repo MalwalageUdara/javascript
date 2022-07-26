@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <div>
+    <select id="selection">
+      <option>Display All</option>
+      <option>Add Contact</option>
+      <option>Remove Contact</option>
+      <option>Display by Name</option>
+      <option>Display by Country</option>
+    </select>
+    <button onclick="setFunction()">GO</button>
+  </div>
+  <div id="addContact" style="margin-top: 3%;display: none;">
+    <table>
+      <tr>
+        <td><span>Name</span></td>
+        <td><input type="text" id="name"></td>
+      </tr>
+      <tr>
+        <td><span>Email</span></td>
+        <td><input type="text" id="email"></td>
+      </tr>
+      <tr>
+        <td><span>Phone Number</span></td>
+        <td> <input type="text" id="phone"></td>
+      </tr>
+      <tr>
+        <td><span>Country</span></td>
+        <td><input type="text" id="country"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="addContactList()">Add</button></td>
+      </tr>
+    </table>
+    
+    
+  </div>
+  <div style="margin-top: 3%;display: none;"  id="displayAll"></div>
+  <div style="margin-top: 3%;display: none;"  id="displayName"></div>
+  <div style="margin-top: 3%;display: none;"  id="displayCountry"></div>
+  <div style="margin-top: 3%;display: none;"  id="removeContact">
+    <span>Element Number</span><input type="text" id="elementId">
+    <button onclick="removeEle()">Remove</button>
+  </div>
+  
+
+
+  
+</body>
+</html>
